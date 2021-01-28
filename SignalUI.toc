@@ -1,0 +1,7 @@
+## Interface: 90002
+## Title: SignalUI
+## Author: xHoaxDreamx
+## Version: 9.0.2-R7
+## In-game: Signal-Proudmoore
+
+SignalUI.xml

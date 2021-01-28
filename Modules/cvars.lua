@@ -1,0 +1,15 @@
+local SignalUICvars = CreateFrame("Frame")
+  -- CVars
+  SetCVar("ffxglow", 0)
+  SetCVar("ffxNether", 0)
+  SetCVar("ffxDeath", 0)
+  SetCVar("mapFade", 0)
+  SetCVar("cameraDistanceMaxZoomFactor", 2.6)
+  SetCVar("screenshotQuality", 10)
+  SetCVar("SpellQueueWindow", 200)
+  SetCVar("showQuestTrackingTooltips", 1)
+  SetCVar("showTutorials", 0)
+
+SignalUICvars:RegisterEvent("PLAYER_ENTERING_WORLD")
+SignalUICvars:SetScript("OnEvent", function(self, event)
+end)
