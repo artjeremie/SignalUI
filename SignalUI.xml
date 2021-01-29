@@ -18,5 +18,4 @@
   <Script file="Modules\timequeue.lua"/>
   <Script file="Modules\tooltip.lua"/>
   <Script file="Modules\unitframes.lua"/>
-  <Script file="Modules\xbar.lua"/>
 </Ui>

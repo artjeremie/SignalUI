@@ -23,10 +23,8 @@ for k, v in next, UIPARENT_MANAGED_FRAME_POSITIONS do
 	v.extraAbilityContainer = nil
 end
 -- Extra action button
---ExtraAbilityContainer:ClearAllPoints()
---ExtraAbilityContainer:SetPoint("CENTER", 0, 0)
-ExtraActionButton1:ClearAllPoints()
-ExtraActionButton1:SetPoint("RIGHT", -4, -4)
+ExtraAbilityContainer:ClearAllPoints()
+ExtraAbilityContainer:SetPoint("CENTER", 0, 0)
 ExtraAbilityContainer:SetScale(0.78)
 ExtraActionButton1.style:SetAlpha(0)
 -- Zone ability action button

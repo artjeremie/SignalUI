@@ -1,10 +1,10 @@
 -- Friendly player nameplates width and height
-local SignalPlates = CreateFrame("Frame")
-SignalPlates:HookScript("OnEvent", function()
+local SignalUIPlates = CreateFrame("Frame")
+SignalUIPlates:HookScript("OnEvent", function()
   C_NamePlate.SetNamePlateFriendlySize(60, 30)
 end
 );
-SignalPlates:RegisterEvent("PLAYER_LOGIN")
+SignalUIPlates:RegisterEvent("PLAYER_LOGIN")
 
 -- Add health percent text to nameplates
 hooksecurefunc("CompactUnitFrame_UpdateHealth", function(frame)

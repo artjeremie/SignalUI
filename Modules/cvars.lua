@@ -1,4 +1,5 @@
-local SignalUICvars = CreateFrame("Frame")
+local SignalUICVar = CreateFrame("Frame")
+SignalUICVar:HookScript("OnEvent", function()
   -- CVars
   SetCVar("ffxglow", 0)
   SetCVar("ffxNether", 0)
@@ -9,7 +10,6 @@ local SignalUICvars = CreateFrame("Frame")
   SetCVar("SpellQueueWindow", 200)
   SetCVar("showQuestTrackingTooltips", 1)
   SetCVar("showTutorials", 0)
+end);
 
-SignalUICvars:RegisterEvent("PLAYER_ENTERING_WORLD")
-SignalUICvars:SetScript("OnEvent", function(self, event)
-end)
+SignalUICVar:RegisterEvent("PLAYER_LOGIN")
