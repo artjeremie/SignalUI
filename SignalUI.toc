@@ -1,6 +1,7 @@
 ## Interface: 90002
 ## Title: SignalUI
 ## Author: xHoaxDreamx, Signal-Proudmoore
-## Version: 1.0
+## Version: 9.0.2.1
+## Notes: Lightweight modification of blizzardUI
 
 SignalUI.xml
