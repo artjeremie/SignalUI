@@ -1,5 +1,3 @@
--- Always on bottom party frame
-
 -- Raid frames slider extender
 local n,w,h="CompactUnitFrameProfilesGeneralOptionsFrame" h,w=
 _G[n.."HeightSlider"],

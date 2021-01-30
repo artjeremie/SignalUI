@@ -1,6 +1,6 @@
-local scombat = CreateFrame("Frame")
-scombat:RegisterEvent("PLAYER_LOGIN")
-scombat:SetScript("OnEvent", function(self, event)
+local sCombat = CreateFrame("Frame")
+sCombat:RegisterEvent("PLAYER_LOGIN")
+sCombat:SetScript("OnEvent", function(self, event)
 
   sct = CreateFrame("Frame")
   sct:SetPoint("Right", TargetFrame, 0)

@@ -1,6 +1,6 @@
-local Sg = CreateFrame("Frame")
-Sg:RegisterEvent("PLAYER_LOGIN")
-Sg:SetScript("OnEvent", function(self, event)
+local sGrid = CreateFrame("Frame")
+sGrid:RegisterEvent("PLAYER_LOGIN")
+sGrid:SetScript("OnEvent", function(self, event)
 
   SLASH_EA1 = "/sl"
 

@@ -8,7 +8,7 @@ sMisc:SetScript("OnEvent", function(self, event)
 -- Slash commands
 -- Reload
   SLASH_SignalUIReload1 = "/sr"
-  SLASH_SignalUIReload2 = "/signalreload"
+  SLASH_SignalUIReload2 = "/srl"
   SlashCmdList["SignalUIReload"] = ReloadUI
 
 -- Leave group
