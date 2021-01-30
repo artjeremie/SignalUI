@@ -1,18 +1,20 @@
-local targeting = ""
+local sTarget = ""
 local TARGET_PREFIX = TARGET..":|cffffffff ";
 
-local STT = {}
+local sTT = {}
 
 -- hook the game tool tip updates, this ensures when a mouseover targets target changes
 -- the tooltip will update
 GameTooltip:HookScript("OnUpdate", function(self, ...)
-  STT:AddTargetToTT()
+  sTT:AddTargetToTT()
 end)
 
-function STT:AddTargetToTT()
+function sTT:AddTargetToTT()
 
-  if ( not UnitExists('mouseovertarget')) then return end
-  -- look for the existing line that starts with "TARGET"
+  if ( not UnitExists('mouseovertarget')) then
+    return
+  end
+
   local targetLine
   local useExisting = false
 
@@ -25,21 +27,29 @@ function STT:AddTargetToTT()
     end
   end
 
-  targeting = UnitName("mouseovertarget")
+  sTarget = UnitName("mouseovertarget")
 
   -- modify if they are targeting you
-  if targeting == UnitName("player") then
-    targeting = "<YOU>"
+  if sTarget == UnitName("player") then
+    sTarget = "<YOU>"
   end
 
-  if (targeting ~= nil and targeting ~= "") then
+  if (sTarget ~= nil and sTarget ~= "") then
     -- either use the existing line and set it's text, or add the new line of text
     if useExisting then
-      targetLine:SetText(string.format("%s %s |r", TARGET_PREFIX, targeting ) )
+      targetLine:SetText(string.format("%s %s |r", TARGET_PREFIX, sTarget ) )
     else
-      GameTooltip:AddLine( string.format("%s %s |r", TARGET_PREFIX, targeting ) )
+      GameTooltip:AddLine( string.format("%s %s |r", TARGET_PREFIX, sTarget ) )
     end
 
     GameTooltip:Show()
   end
 end
+
+-- Move tooltip
+hooksecurefunc("GameTooltip_SetDefaultAnchor", function()
+  if GameTooltip then
+    GameTooltip:ClearAllPoints()
+    GameTooltip:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -85, 50)
+  end
+end)

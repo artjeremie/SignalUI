@@ -1,21 +1,24 @@
 <Ui>
   <!-- Modules-->
-  <Script file="Modules\arenanumbers.lua"/>
-  <Script file="Modules\autorepair.lua"/>
-  <Script file="Modules\castbars.lua"/>
-  <Script file="Modules\combatindicator.lua"/>
-  <Script file="Modules\core.lua"/>
+  <Script file="Modules\actionbar.lua"/>
+  <Script file="Modules\adjustframe.lua"/>
+  <Script file="Modules\alert.lua"/>
+  <Script file="Modules\arenatimer.lua"/>
+  <Script file="Modules\buffs.lua"/>
+  <Script file="Modules\castbar.lua"/>
+  <Script file="Modules\chat.lua"/>
+  <Script file="Modules\combaticon.lua"/>
+  <Script file="Modules\coords.lua"/>
   <Script file="Modules\cvars.lua"/>
   <Script file="Modules\dampening.lua"/>
-  <Script file="Modules\easydelete.lua"/>
-  <Script file="Modules\grids.lua"/>
-  <Script file="Modules\itemlevel.lua"/>
+  <Script file="Modules\grid.lua"/>
+  <Script file="Modules\hidden.lua"/>
+  <Script file="Modules\latency.lua"/>
+  <Script file="Modules\minimap.lua"/>
   <Script file="Modules\misc.lua"/>
-  <Script file="Modules\nameplates.lua"/>
-  <Script file="Modules\range.lua"/>
-  <Script file="Modules\statustext.lua"/>
+  <Script file="Modules\nameplate.lua"/>
   <Script file="Modules\talkinghead.lua"/>
-  <Script file="Modules\timequeue.lua"/>
   <Script file="Modules\tooltip.lua"/>
   <Script file="Modules\unitframes.lua"/>
+  <Script file="Modules\vendor.lua"/>
 </Ui>

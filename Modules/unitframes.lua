@@ -7,6 +7,7 @@ local function colorBar(statusbar, unit)
     statusbar:SetStatusBarColor(c.r, c.g, c.b)
   end
 end
+
 hooksecurefunc("UnitFrameHealthBar_Update", colorBar)
 hooksecurefunc("HealthBar_OnValueChanged", function(self)
   colorBar(self, self.unit)
@@ -22,7 +23,14 @@ end)
 
 -- Transparent background
 local UnitClass = UnitClass
+
 hooksecurefunc("TargetFrame_CheckFaction",function(self)
   local _,class = UnitClass(self.unit)
   self.nameBackground:SetVertexColor(0.0, 0.0, 0.0, 0.5)
 end)
+
+-- Rare dragon portrait
+-- Ensure chain doesnt clip through pet portrait and rune frame
+PetPortrait:GetParent():SetFrameLevel(4)
+RuneFrame:SetFrameLevel(4)
+PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Rare-Elite.blp")
