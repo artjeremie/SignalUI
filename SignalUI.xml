@@ -2,7 +2,6 @@
   <!-- Modules-->
   <Script file="Modules\actionbar.lua"/>
   <Script file="Modules\adjustframe.lua"/>
-  <Script file="Modules\alert.lua"/>
   <Script file="Modules\arenatimer.lua"/>
   <Script file="Modules\buffs.lua"/>
   <Script file="Modules\castbar.lua"/>
@@ -11,6 +10,7 @@
   <Script file="Modules\coords.lua"/>
   <Script file="Modules\cvars.lua"/>
   <Script file="Modules\dampening.lua"/>
+  <Script file="Modules\easydelete.lua"/>
   <Script file="Modules\grid.lua"/>
   <Script file="Modules\hidden.lua"/>
   <Script file="Modules\latency.lua"/>
@@ -18,7 +18,6 @@
   <Script file="Modules\minimap.lua"/>
   <Script file="Modules\misc.lua"/>
   <Script file="Modules\nameplate.lua"/>
-  <Script file="Modules\talkinghead.lua"/>
   <Script file="Modules\tooltip.lua"/>
   <Script file="Modules\unitframes.lua"/>
   <Script file="Modules\vendor.lua"/>
