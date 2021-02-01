@@ -14,7 +14,8 @@
   <Script file="Modules\grid.lua"/>
   <Script file="Modules\hidden.lua"/>
   <Script file="Modules\latency.lua"/>
-  <Script file="Modules\mail.lua"/>
+  <Script file="Modules\logmail.lua"/>
+  <Script file="Modules\lootalert.lua"/>
   <Script file="Modules\minimap.lua"/>
   <Script file="Modules\misc.lua"/>
   <Script file="Modules\nameplate.lua"/>
