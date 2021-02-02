@@ -2,6 +2,7 @@
   <!-- Modules-->
   <Script file="Modules\actionbar.lua"/>
   <Script file="Modules\adjustframe.lua"/>
+  <Script file="Modules\alertframe.lua"/>
   <Script file="Modules\arenatimer.lua"/>
   <Script file="Modules\buffs.lua"/>
   <Script file="Modules\castbar.lua"/>
@@ -15,7 +16,6 @@
   <Script file="Modules\hidden.lua"/>
   <Script file="Modules\latency.lua"/>
   <Script file="Modules\logmail.lua"/>
-  <Script file="Modules\lootalert.lua"/>
   <Script file="Modules\minimap.lua"/>
   <Script file="Modules\misc.lua"/>
   <Script file="Modules\nameplate.lua"/>

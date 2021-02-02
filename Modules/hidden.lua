@@ -1,6 +1,3 @@
--- Error frame
-UIErrorsFrame:Hide()
-
 -- Unitframe pvp icon
 PlayerPrestigeBadge:SetAlpha(0)
 PlayerPrestigePortrait:SetAlpha(0)
