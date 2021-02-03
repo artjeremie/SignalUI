@@ -6,6 +6,7 @@ SCVar:HookScript("OnEvent", function()
   SetCVar("mapFade", 0)
   SetCVar("screenshotQuality", 10)
   SetCVar("SpellQueueWindow", 200)
+  SetCVar("AllowDangerousScripts", 1)
 end)
 
 SCVar:RegisterEvent("PLAYER_LOGIN")
