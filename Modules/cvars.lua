@@ -7,6 +7,7 @@ SCVar:HookScript("OnEvent", function()
   SetCVar("screenshotQuality", 10)
   SetCVar("SpellQueueWindow", 200)
   SetCVar("AllowDangerousScripts", 1)
+  SetCVar("showQuestTrackingTooltips", 1)
 end)
 
 SCVar:RegisterEvent("PLAYER_LOGIN")
