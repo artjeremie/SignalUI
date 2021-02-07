@@ -81,3 +81,10 @@ for i = 1, 10 do
     fcl.AddMessage = AddMessage
   end
 end
+
+-- Font outline
+for i = 1, 10 do
+  local cF = _G[format("%s%d", "ChatFrame", i)]
+  local font, size = cF:GetFont()
+  cF:SetFont(font, size, "OUTLINE")
+end

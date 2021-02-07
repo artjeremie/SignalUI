@@ -8,6 +8,7 @@ SCVar:HookScript("OnEvent", function()
   SetCVar("SpellQueueWindow", 200)
   SetCVar("AllowDangerousScripts", 1)
   SetCVar("showQuestTrackingTooltips", 1)
+  SetCVar("cameraDistanceMaxZoomFactor", 2.6)
 end)
 
 SCVar:RegisterEvent("PLAYER_LOGIN")
