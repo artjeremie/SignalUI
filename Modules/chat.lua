@@ -82,9 +82,45 @@ for i = 1, 10 do
   end
 end
 
--- Font outline
+-- Chat fade hide
+CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA = 0
+CHAT_FRAME_TAB_SELECTED_NOMOUSE_ALPHA = 0
+CHAT_FRAME_BUTTON_FRAME_MIN_ALPHA = 0
+for i=1, 10 do
+  local tab = _G[format("%s%d%s", "ChatFrame", i, "Tab")]
+  tab:SetAlpha(0)
+  tab.noMouseAlpha = 0
+end
+
+-- Tab flashing
+FCF_FlashTab = function() end
+FCFTab_UpdateAlpha = function() end
+
+-- Chat resizing any size
 for i = 1, 10 do
-  local cF = _G[format("%s%d", "ChatFrame", i)]
-  local font, size = cF:GetFont()
-  cF:SetFont(font, size, "OUTLINE")
+  local cfs = _G[format("%s%d", "ChatFrame", i)]
+  cfs:SetMinResize(100,10)
+  cfs:SetMaxResize(0,0)
+end
+
+-- Chat scrollbar hide
+for i=1,NUM_CHAT_WINDOWS do 
+  local f="ChatFrame" .. i;
+  local b = _G["ChatFrame"..i].ScrollBar b:UnregisterAllEvents()
+  b:SetScript("OnShow", b.Hide)
+  b:Hide();
+end
+
+-- Chat editbox
+ChatFrame1EditBox:ClearAllPoints()
+ChatFrame1EditBox:SetPoint("BOTTOMLEFT", ChatFrame1, "TOPLEFT", -5, 2)
+ChatFrame1EditBox:SetPoint("RIGHT", ChatFrame1, 5, 0)
+
+-- Normal scroll
+local function scrollChat(sMWChat, delta)
+  if delta > 0 then
+    sMWChat:ScrollUp()
+  elseif delta < 0 then
+    sMWChat:ScrollDown()
+  end
 end

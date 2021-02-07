@@ -14,7 +14,7 @@ sMisc:SetScript("OnEvent", function(self, event)
 -- Leave group
   SLASH_LEAVEGROUP1 = "/lg"
   SlashCmdList["LEAVEGROUP"] = function()
-   SendChatMessage("Thanks for the Group","SAY")
+    SendChatMessage("Thanks for the Group","SAY")
     C_PartyInfo.LeaveParty()
   end
 
@@ -28,3 +28,6 @@ sMisc:SetScript("OnEvent", function(self, event)
 Stopwatch_Toggle()
 StopwatchFrame:SetFrameStrata(BACKGROUND)
 end)
+
+-- Damage font
+DAMAGE_TEXT_FONT = "Interface\\AddOns\\SignalUI\\Media\\font.ttf"

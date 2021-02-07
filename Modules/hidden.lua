@@ -31,3 +31,17 @@ MinimapBorderTop:Hide()
 
 -- Bags
 MicroButtonAndBagsBar:Hide()
+
+-- Chat
+ChatFrame1EditBoxLeft:SetAlpha(0)
+ChatFrame1EditBoxMid:SetAlpha(0)
+ChatFrame1EditBoxRight:SetAlpha(0)
+ChatFrame1EditBox.focusLeft:SetAlpha(0)
+ChatFrame1EditBox.focusMid:SetAlpha(0)
+ChatFrame1EditBox.focusRight:SetAlpha(0)
+ChatFrame1ButtonFrame:Hide()
+ChatFrameMenuButton:Hide()
+ChatFrameChannelButton:Hide()
+QuickJoinToastButton:Hide()
+ChatFrameToggleVoiceDeafenButton:Hide()
+ChatFrameToggleVoiceMuteButton:Hide()
