@@ -29,8 +29,10 @@ hooksecurefunc("TargetFrame_CheckFaction",function(self)
   self.nameBackground:SetVertexColor(0.0, 0.0, 0.0, 0.5)
 end)
 
+--[[
 -- Rare dragon portrait
 -- Ensure chain doesnt clip through pet portrait and rune frame
+--]]
 PetPortrait:GetParent():SetFrameLevel(4)
 RuneFrame:SetFrameLevel(4)
 PlayerFrameTexture:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Rare-Elite.blp")

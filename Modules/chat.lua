@@ -96,11 +96,14 @@ end
 FCF_FlashTab = function() end
 FCFTab_UpdateAlpha = function() end
 
--- Chat resizing any size
+-- Resize and move to end of screen
 for i = 1, 10 do
+  local eb =  _G[format("%s%d%s", "ChatFrame", i, "EditBox")]
   local cfs = _G[format("%s%d", "ChatFrame", i)]
   cfs:SetMinResize(100,10)
   cfs:SetMaxResize(0,0)
+  cfs:SetClampRectInsets(0,0,0,0)
+  eb:SetAltArrowKeyMode(false)
 end
 
 -- Chat scrollbar hide

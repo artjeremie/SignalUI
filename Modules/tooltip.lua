@@ -3,8 +3,10 @@ local TARGET_PREFIX = TARGET..":|cffffffff ";
 
 local sTT = {}
 
--- hook the game tool tip updates, this ensures when a mouseover targets target changes
--- the tooltip will update
+--[[
+hook the game tool tip updates, this ensures when a mouseover targets target changes
+the tooltip will update
+--]]
 GameTooltip:HookScript("OnUpdate", function(self, ...)
   sTT:AddTargetToTT()
 end)
